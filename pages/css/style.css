@@ -1,0 +1,27 @@
+/* public/styles.css */
+
+.banner {
+    height: 260px;
+    background-color: #ccc;
+}
+
+.blog-post {
+    margin-top: 40px;
+}
+
+.blog-post img {
+    margin-bottom: 20px;
+}
+
+.ad-block {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
