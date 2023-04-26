@@ -1,0 +1,18 @@
+export function GetBase64(file: Blob): Promise<string> {
+    return new Promise(resolve => {
+        let fileInfo;
+        let baseURL: string | ArrayBuffer | null = "";
+        // Make new FileReader
+        let reader = new FileReader();
+
+        // Convert the file to base64 text
+        reader.readAsDataURL(file);
+
+        // on reader load somthing...
+        reader.onload = () => {
+            // Make a fileInfo Object
+            baseURL = reader.result;
+            resolve(baseURL as string);
+        };
+    });
+}

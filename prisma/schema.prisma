@@ -17,4 +17,5 @@ model t001 {
   f001resumo      String   @db.VarChar(256)
   f001conteudo    String   @db.VarChar(5000)
   f001dataCriacao DateTime @default(now())
+  f001imagem      String?  @db.Text
 }
